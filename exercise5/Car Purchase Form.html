@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Purchase Form</title>
+</head>
+<body>
+    <form action="http://myserver.com" method="post">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Car Purchase Form</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="name">Name:</label>
+            </td>
+            <td>
+              <input type="text" id="name" name="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email:</label>
+            </td>
+            <td>
+              <input type="email" id="email" name="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Phone">Phone:</label>
+            </td>
+            <td>
+              <input type="text" id="phone" name="phone" />
+            </td>
+          </tr>
+            <td>
+              <label for="choosecar">Choose a Car:</label>
+            </td>
+            <td>
+              <input list="ModelCar"/>
+              <datalist id="ModelCar">
+                <option value="Model1">Model1</option>
+                <option value="Model2">Model2</option>
+                <option value="Model3">Model3</option>
+                <option value="Model4">Model4</option>
+              </datalist>
+            </td>
+          </tr>
+            <td>
+              <label for="choosecolor">Choose a Color:</label>
+            </td>
+            <!-- <td>
+              <input list="color"/>
+              <datalist id="color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+              </datalist>
+            </td> -->
+            <td>
+                <input type="color" id="choosecolor" name="choosecolor">
+            </td>
+          <tr>
+            <td>
+              <label for="Quantity">Quantity:</label>
+            </td>
+            <td>
+              <input type="text" id="Quantity" name="Quantity" />
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <label for="delidate">Delivery Date:</label>
+            </td>
+            <td>
+              <input type="date" id="dalidate" name="dalidate" />
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+        </tfoot>
+      </table>
+    </form>
+</body>
+</html>
